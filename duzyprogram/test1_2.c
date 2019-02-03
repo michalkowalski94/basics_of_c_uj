@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
 
 int ReadNumber(int *number)
@@ -27,7 +26,6 @@ int main(void)
   int *number;
   number = malloc(sizeof(int));
   ReadNumber(number);
-  printf("%d\n", *number);
   if(Condition(number) == 0)
   {
     printf("Liczba jest liczba pierwsza\n");
